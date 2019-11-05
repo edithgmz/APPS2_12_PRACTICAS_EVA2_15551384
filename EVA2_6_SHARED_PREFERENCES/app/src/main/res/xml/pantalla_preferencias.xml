@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="Hola mundo"
+        android:key="opcion_1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Saludo Default" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="opcion_2"
+        android:title="¿Mayor de edad?" />
+    <PreferenceScreen android:title="Más opciones...">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="opcion_3"
+            android:title="¿Trabaja?" />
+    </PreferenceScreen>
+</PreferenceScreen>
