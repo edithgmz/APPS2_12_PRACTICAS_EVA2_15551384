@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_capturar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:showIn="@layout/activity_capturar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Ciudad"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgVwImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:contentDescription="Imagen"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSelecImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtTxtCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Chihuahua"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura (en °C)"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtTxtTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="19"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned|number"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clima"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtTxtClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tornado"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtTxtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Run to the hills"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
